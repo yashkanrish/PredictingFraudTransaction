@@ -2,7 +2,7 @@
 
 Link to data source = https://www.kaggle.com/ntnu-testimon/paysim1
  
-In this project, we were trying to analyze the pattern of fraudulent transactions by making use of different modelling techniques and using the results obtained from our study to predict and prevent similar fraud cases in future. According to a report published by Experian, "63% of businesses have experienced the same or more fraud losses in the past 12 months" (Full Report here: https://www.experian.com/assets/decision-analytics/reports/global-fraud-report-2018.pdf). It is therefore paramount to enhance the fraud detection mechanisms. 
+In this project, we were trying to analyze the pattern of fraudulent transactions by making use of different modelling techniques and using the results obtained from our study we intend to predict and prevent similar fraud cases in future. According to a report published by Experian, "63% of businesses have experienced the same or more fraud losses in the past 12 months" (Full Report here: https://www.experian.com/assets/decision-analytics/reports/global-fraud-report-2018.pdf). It is therefore paramount to enhance the fraud detection mechanisms. 
 
 ## Relevance
 
@@ -34,5 +34,9 @@ isFraud - This is the transactions made by the fraudulent agents inside the simu
 isFlaggedFraud - The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction.
 
 
+## Methodology and Results
 
+We performed feature engineering to develop new variables that helped us in our prediction. We have used three different model: logistic regression, random forest and XG boost for training our dataset and measured the performance of each model in terms of balanced accuracy, sensitivity and specificity.
+
+In this experiment we first performed a down sampling to create an approximately 50:50 split of fraud and non-fraud transactions. And developed three models mentioned above to test and predict fraud in Transactions. We obtained .99 F1 score and 99.2% accuracy
 
