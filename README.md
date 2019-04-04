@@ -38,5 +38,5 @@ isFlaggedFraud - The business model aims to control massive transfers from one a
 
 We performed feature engineering to develop new variables that helped us in our prediction. We have used three different model: logistic regression, random forest and XG boost for training our dataset and measured the performance of each model in terms of balanced accuracy, sensitivity and specificity.
 
-In this experiment we first performed a down sampling to create an approximately 50:50 split of fraud and non-fraud transactions. And developed three models mentioned above to test and predict fraud in Transactions. We obtained .99 F1 score and 99.2% accuracy
+In this experiment we first performed a down sampling to create an approximately 50:50 split of fraud and non-fraud transactions. And developed three models mentioned above to test and predict fraud in Transactions. We obtained .99 F1 score and 99.72% specificity
 
