@@ -1,6 +1,10 @@
 # Loading data and performing exploratory data analysis
 rm(list= ls()[!(ls() %in% c('ds'))])
-ds = read.csv("/Users/himanshupremchandani/Documents/Datasets/R-Data Mining project/FraudData.csv")
+
+## Load data only when I does not already exist
+if(!exists("ds")){
+  ds = read.csv("/home/sharm364/DM Project/FraudData.csv")
+}
 str(ds)
 summary(ds)
 unique(ds$type)
